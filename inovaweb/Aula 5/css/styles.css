@@ -1,0 +1,14 @@
+h1{
+    font-size: 50pt;
+    color: #182666;
+}
+body {
+    color: #252222
+}
+.destaque {
+    background-color: yellowgreen;
+    color: blueviolet;
+}
+.italico {
+    font-size: italic;
+}
