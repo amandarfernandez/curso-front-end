@@ -1,91 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
-    xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
     <title>InovaWeb</title>
-
-    <!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
-<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
-<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
-<!-- para inserir comentários-->
-<header id="header">
-<h1>InovaWeb</h1>
-    <h2 class="destaque italico">A sua solução tecnológica perfeita</h2>
-    <p>Criamos sites modernos, responsivos e inovadores para sua empresa
-        <br />
-        se destacar no mercado digital.
-    </p>
-    <nav>
-        <ul>
-            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-        </ul>
-    </nav>
-    <hr noshade>
-    <img src="./banner.png" alt="banner do site" width="1920" height="720">
-</header>
-<h3>Lista de Serviços</h3>
-<ul>
-    <li>Desenvolvimento de Sites</li>
-    <li>Loja Virtual</li>
-    <li>Otimização para Motores de Busca (SEO)</li>
-    <li>Hospedagem e Suporte Técnico</li>
-</ul>
-<table border="1">
-    <caption>Preços dos Serviços</caption>
-    <tr>
-        <th>Serviço</th>
-        <th>Descrição</th>
-        <th>Preço</th>
-    </tr>
-    <tr>
-        <td>Desenvolvimento de Sites</td>
-        <td>Site completo com design moderno e responsivo</td>
-        <td>R$ 2.000,00</td>
-    </tr>
-    <tr>
-        <td>Loja Virtual</td>
-        <td>Plataforma de comércio eletrônico completa</td>
-        <td>R$ 3.500,00</td>
-    </tr>
-    <tr>
-        <td>Otimização para Motores de Busca (SEO)</td>
-        <td>Optimização do site para melhor posicionamento nos resultados dos motores de busca</td>
-        <td>R$ 1.500,00</td>
-    </tr>
-    <tr>
-        <td>Hospedagem e Suporte Técnico</td>
-        <td>Serviços de hospedagem e suporte técnico contínuo</td>
-        <td>R$ 500,00/mês</td>
-    </tr>
-</table>
-<br />
-<br />
-<br />
-<hr>
-<br />
-<br />
-<h3>Formulário de Contato</h3>
-<form action="enviar.php" method="post">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+<body>
 
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+    <!-- HEADER -->
+    <header id="header">
+        <h1>InovaWeb</h1>
+        <p class="destaque italico">A sua solução tecnológica perfeita</p>
 
-    <input type="submit" value="Enviar">
-</form>
+        <p>
+            Criamos sites modernos, responsivos e inovadores para sua empresa
+            se destacar no mercado digital.
+        </p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                        YouTube
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <img src="./banner.png" alt="Banner da InovaWeb mostrando soluções digitais">
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos">
+            <h2>Serviços</h2>
+
+            <ul>
+                <li>Desenvolvimento de Sites</li>
+                <li>Loja Virtual</li>
+                <li>Otimização para Motores de Busca (SEO)</li>
+                <li>Hospedagem e Suporte Técnico</li>
+            </ul>
+        </section>
+
+        <!-- TABELA DE PREÇOS -->
+        <section id="precos">
+            <h2>Preços</h2>
+
+            <table>
+                <caption>Preços dos Serviços</caption>
+
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Desenvolvimento de Sites</td>
+                        <td>Site completo com design moderno e responsivo</td>
+                        <td>R$ 2.000,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Loja Virtual</td>
+                        <td>Plataforma de comércio eletrônico completa</td>
+                        <td>R$ 3.500,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>SEO</td>
+                        <td>Melhor posicionamento nos buscadores</td>
+                        <td>R$ 1.500,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hospedagem</td>
+                        <td>Suporte técnico contínuo</td>
+                        <td>R$ 500,00/mês</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2>Contato</h2>
+
+            <form action="enviar.php" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 InovaWeb - Todos os direitos reservados</p>
+    </footer>
+
 </body>
 
 </html>

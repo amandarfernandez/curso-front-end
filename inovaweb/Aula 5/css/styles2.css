@@ -1,0 +1,280 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sora:wght@300;400;600;700&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Sora', sans-serif;
+    background: #0B0F1A;
+    color: #E5E7EB;
+    line-height: 1.6;
+}
+
+/* ===== CONTAINER ===== */
+main, header, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SUBTEXTO */
+.destaque {
+    color: #22D3EE;
+}
+
+.italico {
+    font-style: italic;
+    color: #9CA3AF;
+}
+
+/* ===== NAV ===== */
+nav {
+    margin-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E5E7EB;
+    border: 1px solid #6D28D9;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #3B82F6, #6D28D9);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+}
+
+/* ===== HERO IMAGE ===== */
+header img {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 16px;
+    opacity: 0.9;
+}
+
+/* ===== SECTION ===== */
+section {
+    margin-top: 80px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* LINHA DECORATIVA */
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+/* ===== SERVIÇOS ===== */
+#servicos ul {
+    list-style: none;
+}
+
+#servicos li {
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #121826;
+    border-left: 4px solid #22D3EE;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#servicos li:hover {
+    transform: translateX(6px);
+    background: #1A2238;
+}
+
+/* ===== TABELA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+/* TODAS AS BORDAS */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* CABEÇALHO */
+th {
+    padding: 14px;
+    text-align: left;
+    background: linear-gradient(90deg, #1E3A8A, #6D28D9);
+    color: #fff;
+}
+
+/* CÉLULAS */
+td {
+    padding: 14px;
+}
+
+/* LINHAS */
+tbody tr {
+    background: #121826;
+}
+
+tbody tr:nth-child(even) {
+    background: #161E2E;
+}
+
+/* HOVER */
+tbody tr:hover {
+    background: #1F2A44;
+}
+
+/* ===== FORM ===== */
+/* ===== FORMULÁRIO PREMIUM ===== */
+#contato form {
+    margin-top: 40px;
+    padding: 30px;
+    background: #121826;
+    border-radius: 16px;
+    border: 1px solid #2A344A;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* GRUPOS */
+#contato form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+#contato label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #9CA3AF;
+}
+
+/* INPUTS */
+#contato input,
+#contato textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #2A344A;
+    background: #0B0F1A;
+    color: #E5E7EB;
+    font-family: 'Sora', sans-serif;
+    transition: 0.3s;
+}
+
+/* PLACEHOLDER */
+#contato input::placeholder,
+#contato textarea::placeholder {
+    color: #6B7280;
+}
+
+/* FOCUS (efeito tech) */
+#contato input:focus,
+#contato textarea:focus {
+    border-color: #22D3EE;
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.4);
+}
+
+/* TEXTAREA */
+#contato textarea {
+    resize: none;
+}
+
+/* BOTÃO */
+#contato button,
+#contato input[type="submit"] {
+    margin-top: 10px;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÃO */
+#contato button:hover,
+#contato input[type="submit"]:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+/* EFEITO CLIQUE */
+#contato button:active {
+    transform: scale(0.98);
+}
+/* ===== BOTÃO ===== */
+button, input[type="submit"] {
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #2A344A;
+    padding-top: 20px;
+    color: #9CA3AF;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
