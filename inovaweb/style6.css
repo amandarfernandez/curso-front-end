@@ -1,0 +1,103 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sora:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: #2e2e2e;
+    line-height: 1.6;
+    padding: 40px;
+    background: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #d12999;
+    margin-bottom: 8px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #b168e2;
+    margin: 40px 0 16px;
+    border-left: 4px solid #0066cc;
+    padding-left: 12px;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    color: #0066cc;
+    margin: 24px 0 8px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  p {
+    margin-bottom: 12px;
+    max-width: 700px;
+  }
+  
+  /* Caixa de exemplo visual */
+  .exemplo {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 16px 0 32px;
+  }
+  
+  /* Caixas coloridas para demonstração */
+  .caixa {
+    background: #0066cc;
+    color: white;
+    padding: 16px;
+    margin: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .caixa-b {
+    background: #6c63ff;
+  }
+  .caixa-c {
+    background: #00b4d8;
+  }
+  
+  /* Separador de seção */
+  section {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+
+  .caixa-flutuante {
+    background-color:rgb(136, 136, 223);
+    color:#f8f9fa;
+    float: left;
+    margin: 10px;
+    margin-right: 0px;
+    padding: 10px;
+    border-radius: 5px 10px 0px 25px;
+  }
+  
+  .caixa-flutuante:hover {
+    background-color: rgb(158, 10, 133);
+    color: #fffb18;
+    transition: 0.3s ease;
+    transform: scale(1.05);
+
+  }
+
+  
