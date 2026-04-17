@@ -13,6 +13,12 @@ h1, h2, h3, .navbar-brand {
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
 }
 .card {
     border: none;
@@ -48,4 +54,99 @@ body {
     letter-spacing: 1px;
     filter: brightness(1.1);
     box-shadow: 0 5px 15px rgba(255, 109, 0, 0.4);
+}
+/* Container que controla o tamanho da peça de portfólio */
+.portfolio-container {
+    transition: transform 0.3s ease; /* Transição para o container todo */
+    max-width: 250px; /* Define um tamanho máximo menor para as imagens */
+    margin: 0 auto;   /* Centraliza o container na coluna */
+}
+
+.portfolio-wrapper {
+    position: relative;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.img-portfolio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* EFEITOS AO PASSAR O MOUSE (HOVER) */
+
+/* 1. O container inteiro aumenta um pouco de tamanho no site */
+.portfolio-container:hover {
+    transform: scale(1.05); 
+}
+
+/* 2. A imagem faz o zoom interno */
+.portfolio-container:hover .img-portfolio {
+    transform: scale(1.2);
+}
+
+/* 3. A borda laranja aparece */
+.portfolio-container:hover .portfolio-wrapper {
+    border-color: #ff6d00;
+}
+/* Espaçamento de Respiro entre Seções */
+.section-padding {
+    padding-top: 75px;    /* Espaço superior */
+    padding-bottom: 75px; /* Espaço inferior */
+}
+
+/* Ajuste para telas menores (Mobile) */
+@media (max-width: 768px) {
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+/* Espaçamento extra entre o título da seção e o conteúdo */
+h2.text-center.mb-5 {
+    margin-bottom: 50px !important; 
+}
+/* Customização da Tabela */
+.table-responsive {
+    border: 1px solid #e0e0e0;
+    overflow: hidden; /* Garante que a borda arredondada funcione */
+}
+
+.custom-thead {
+    background-color: #101766; /* Mesmo azul da sua Navbar */
+    color: #ffffff;
+}
+
+.custom-thead th {
+    padding: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse na linha */
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 109, 0, 0.05) !important; /* Um leve toque de laranja */
+}
+
+.table td {
+    padding: 18px 10px;
+}
+footer a {
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    transform: scale(1.2);
 }
