@@ -17,6 +17,7 @@
 </head>
 
 <body>
+   
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #101766;">
         <div class="container">
@@ -40,18 +41,93 @@
             </div>
         </div>
     </nav>
-
+    
     <main>
+        
 
-        <section class="text-center py-5"
-            style="background: linear-gradient(135deg, #1A237E 0%, #004D40 100%); margin-top: 56px">
-            <div class="container text-white">
-                <h1 class="display-4 fw-bold mt-5">Sua marca no topo do digital.</h1>
-                <p class="lead">Sites de alta performance com design inteligente.</p>
-                <a href="#contato" class="btn btn-lg mt-3"
-                    style="background-color: #ff6d00; color: aliceblue;">Começar Agora!</a>
-            </div>
-        </section>
+        <section class="carousel-section">
+            <div id="carrosselRef" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button data-bs-target="#carrosselRef" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                  <button data-bs-target="#carrosselRef" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button data-bs-target="#carrosselRef" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+  
+                <div class="carousel-inner">
+  
+  
+                  <div class="carousel-item active">
+                    <img
+                      src="https://placehold.co/1300x300/1a237e/ffffff?text=Desenvolvimento+Web"
+                      class="d-block w-100"
+                      alt="Slide 1: Desenvolvimento Web">
+                    <!--
+                      carousel-caption: legenda sobreposta à imagem (posição absoluta)
+                      d-none d-md-block: esconde em mobile, exibe tablet+ (≥768px)
+                      Motivo: em telas pequenas a imagem fica comprimida e
+                      a legenda torna-se ilegível ou sobrepõe muito o conteúdo.
+                    -->
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Desenvolvimento Web</h5>
+                      <p>Sites modernos e responsivos com IA.</p>
+                    </div>
+                  </div>
+  
+                  <!-- SLIDE 2 -->
+                  <div class="carousel-item">
+                    <img
+                      src="https://placehold.co/1300x300/ff6d00/ffffff?text=Design+com+IA"
+                      class="d-block w-100"
+                      alt="Slide 2: Design com IA">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Design com Inteligência Artificial</h5>
+                      <p>Layouts gerados e otimizados com IA.</p>
+                    </div>
+                  </div>
+  
+                  <!-- SLIDE 3 -->
+                  <div class="carousel-item">
+                    <img
+                      src="https://placehold.co/1300x300/004d40/ffffff?text=Consultoria+Digital"
+                      class="d-block w-100"
+                      alt="Slide 3: Consultoria Digital">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Consultoria Digital</h5>
+                      <p>Estratégia de presença digital para seu negócio.</p>
+                    </div>
+                  </div>
+  
+                </div><!-- /carousel-inner -->
+  
+                <button
+                  class="carousel-control-prev"
+                  data-bs-target="#carrosselRef"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+  
+                <button
+                  class="carousel-control-next"
+                  data-bs-target="#carrosselRef"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+  
+              </div><!-- /carrossel -->
+</section>
+
+<section class="text-center py-5"
+style="background: linear-gradient(135deg, #1A237E 0%, #004D40 100%); margin-top: 0px">
+<div class="container text-white">
+    <h1 class="display-4 fw-bold mt-5">Sua marca no topo do digital.</h1>
+    <p class="lead">Sites de alta performance com design inteligente.</p>
+    <a href="#contato" class="btn btn-lg mt-4"
+        style="background-color: #ff6d00; color: aliceblue;">Começar Agora!</a>
+</div>
+</section>    
 
         <section id="servicos" class="section-padding">
             <div class="container">
@@ -61,7 +137,7 @@
 
                     <!-- Card 1: Desenvolvimento Web -->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-lg">
                             <div class="card-body text-center">
                                 <i class="bi bi-code-slash" style="font-size: 2rem; color: #004D40;"></i>
                                 <h5 class="card-title mt-2" style="color: #004D40;">Desenvolvimento Web</h5>
@@ -76,7 +152,7 @@
 
                     <!-- Card 2: Design com IA -->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-lg">
                             <div class="card-body text-center">
                                 <span class="badge mb-2" style="background-color: #ff6d00;">Mais Popular</span>
                                 <i class="bi bi-robot" style="font-size: 2rem; color: #004D40;"></i>
@@ -92,7 +168,7 @@
 
                     <!-- Card 3: Consultoria Digital -->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-lg">
                             <div class="card-body text-center">
                                 <i class="bi bi-graph-up-arrow" style="font-size: 2rem; color: #004D40;"></i>
                                 <h5 class="card-title mt-2" style="color: #004D40;">Consultoria Digital</h5>
@@ -128,7 +204,7 @@
         
                     <div class="col-10 col-sm-8 col-md-3">
                         <div class="portfolio-container">
-                            <div class="portfolio-wrapper rounded-4 overflow-hidden shadow-sm">
+                            <div class="portfolio-wrapper rounded-4 overflow-hidden shadow-lg">
                                 <div class="ratio ratio-1x1">
                                     <img src="IA.png" class="img-portfolio" alt="Projeto 2">
                                 </div>

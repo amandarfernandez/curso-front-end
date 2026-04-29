@@ -1,0 +1,127 @@
+/* ==================================================
+FONTES
+================================================== */
+body {
+    font-family: 'Inter', sans-serif;
+    padding-top: 80px;
+}
+
+
+/* ==================================================
+NAVBAR
+================================================== */
+
+    .navbar {
+        backdrop-filter: blur(10px); /* Desfoca o que está atrás */
+        background-color: #290a3d !important; /* Cor com transparência */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+
+.navbar-brand img {
+    height: 45px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ff4500 !important;
+}
+
+/* ==================================================
+HERO
+================================================== */
+.hero-section {
+    background: linear-gradient(135deg, #290a3d, #a181e0, #ff4500);
+}
+
+.hero-title {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+.section-padding {
+    padding-top: 75px;    /* Espaço superior */
+    padding-bottom: 75px; /* Espaço inferior */
+}
+
+
+/* Espaçamento extra entre o título da seção e o conteúdo */
+h2.text-center.mb-5 {
+    margin-bottom: 50px !important; 
+}
+
+/* ==================================================
+BOTÕES
+================================================== */
+.btn-dark {
+    background-color: #290a3d;
+    color: #fff;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #ff4500;
+}
+
+.btn-primary {
+    background-color: #a181e0;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #ff4500;
+}
+
+/* ==================================================
+CARDS
+================================================== */
+.service-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: none;
+    position: relative;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.popular {
+    border: 2px solid #ff4500;
+}
+
+.popular-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff4500;
+}
+
+/* ==================================================
+FOOTER
+================================================== */
+.footer {
+    background-color: #290a3d;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    margin: 0 15px;
+    color: #a181e0;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff4500;
+}
