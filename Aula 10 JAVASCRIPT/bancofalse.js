@@ -84,3 +84,5 @@ bloquearConta() //chamando a função para bloquear a conta. O console exibirá 
 
 depositar(100) //tentando realizar um depósito após a conta ter sido bloqueada. O console exibirá uma mensagem de erro informando que o valor é inválido para depósito, pois a conta está bloqueada.
 sacar(300) //tentando realizar um saque após a conta ter sido bloqueada. O console exibirá uma mensagem de erro informando que o valor é inválido para saque, pois a conta está bloqueada.
+
+//testando commit
