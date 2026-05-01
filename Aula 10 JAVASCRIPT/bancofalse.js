@@ -50,10 +50,7 @@ function sacar(valor) {
     
 }
 
-
-
 sacar(200) 
-
 
 function verExtrato() {
     if (contaAtiva) {
