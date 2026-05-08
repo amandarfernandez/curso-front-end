@@ -154,19 +154,16 @@ verResumo()
 
 
 function simularTentativassaque
-(valor, maxTentativas){
+(valor, maxTentativas = 5){
     let tentativas = 0
-    while(tentativas < maxTentativas) {
-        console.log(`Tentativa ${tentativas + 1} de ${maxTentativas}: Tentando sacar R$ ${valor.toFixed(2)}...`)
-        if(valor <= saldo) {
-            console.log("Saque realizado com sucesso!")
-            break
-        } else {
-            console.log("Saldo insuficiente para saque.")
-        }
+    while(tentativas < maxTentativas && valor > saldo) {
+        console.log(`Tentativa ${tentativas + 1}:R$ ${valor.toFixed(2)} - saldo insuficiente.`)
+        valor = valor * 0.8
         tentativas++
-    }
-    if(tentativas === maxTentativas) {
-        console.log("Número máximo de tentativas atingido. Operação negada.")
-    }
+        }
+        if(tentativas===maxTentativas) {
+            console.log("Tentativas esgotadas. Saque não realizado")
+            } else {
+           sacar(valor)
+        }
 }
