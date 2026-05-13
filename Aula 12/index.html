@@ -21,15 +21,17 @@
         É o equivalente visual do console.log do saldo.
       -->
       <div id="saldo">R$ 10000.00</div>
-      <p class="info-conta">
-        Conta <strong id="numero-conta">1</strong> —
+      <p class="info-conta"> Conta <strong id="numero-conta">1</strong> —
         <strong id="titular">Amanda Fernandez</strong> &nbsp;
+        <span id="status-conta" class="status-ativa">Ativa</span></p>
         <!--
           id="status-conta" → vamos alternar as classes
           .status-ativa e .status-bloqueada via classList
           quando bloquearConta() for chamada.
         -->
-        <span id="status-conta" class="status-ativa">Ativa</span>
+      
+      <button id="btn-editar-titular">✏️ Alterar titular</button>
+        <input type="text" id="campo-titular" placeholder="Alterar titular" style="display: none;">
       </p>
     </div>
 
@@ -57,6 +59,7 @@
         -->
         <button id="btn-depositar">⬆ Depositar</button>
         <button id="btn-sacar">⬇ Sacar</button>
+       
       </div>
 
       <!--
@@ -82,9 +85,13 @@
         e adicioná-lo aqui com appendChild ou insertBefore.
         Equivale ao console.log do histórico.
       -->
+      
+
       <ul id="lista-historico">
         <li class="historico-vazio">Nenhuma transação ainda.</li>
       </ul>
+  
+      <button id="btn-limpar-historico"> 🧹 Limpar Histórico</button>
     </div>
 
     <!-- ── Card de Resumo ─────────────────────────────────── -->
@@ -114,7 +121,7 @@
 
   </div>
 
-  <script src="banco.js"></script>
+  <script src="banco2.js"></script>
 
 </body>
 

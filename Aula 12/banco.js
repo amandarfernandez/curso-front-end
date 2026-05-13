@@ -50,6 +50,7 @@ function depositar(valor) {
 
     atualizarSaldo(); //chamando a função para atualizar o saldo exibido no console após realizar o depósito. O console exibirá o novo saldo da conta, refletindo o valor do depósito realizado.
     verResumo();
+    atualizarHistoricoNaTela();
     exibirMensagem(`Depósito de ${valor} realizado com sucesso!`, "sucesso"); //chamando a função para exibir uma mensagem de sucesso no console, indicando que o depósito foi realizado com sucesso. A mensagem será exibida com a classe CSS 'msg-sucesso' para estilização.
   } else {
     exibirMensagem(
@@ -76,6 +77,7 @@ function sacar(valor) {
 
     atualizarSaldo(); //chamando a função para atualizar o saldo exibido no console após realizar o depósito. O console exibirá o novo saldo da conta, refletindo o valor do depósito realizado.
     verResumo();
+    atualizarHistoricoNaTela();
     exibirMensagem(`Saque de ${valor} realizado com sucesso!`, "sucesso"); //chamando a função para exibir uma mensagem de sucesso no console, indicando que o depósito foi realizado com sucesso. A mensagem será exibida com a classe CSS 'msg-sucesso' para estilização.
   } else {
     //console.log( "\nValor inválido para saque. \nO valor deve ser maior que zero e menor ou igual ao saldo disponível." );
@@ -128,3 +130,26 @@ function verResumo() {
   elTotalTransacoes.textContent = totalTransações;
 }
 
+function atualizarHistoricoNaTela() {
+  if (!elUltimasTransacoes) return;
+
+  const mensagemVazia = document.querySelector(".historico-vazio");
+
+  // Controla a mensagem de vazio
+  if (mensagemVazia) {
+    mensagemVazia.style.display = historico.length === 0 ? "block" : "none";
+  }
+
+  // Pega só as últimas 5 (mais recentes primeiro)
+  const ultimas = historico.slice(-5).reverse();
+
+  // Cria os elementos de forma segura
+  const itens = ultimas.map(transacao => {
+    const li = document.createElement("li");
+    li.textContent = transacao;
+    return li;
+  });
+
+  // Substitui todos os filhos de uma vez (melhor prática)
+  elUltimasTransacoes.replaceChildren(...itens);
+}
