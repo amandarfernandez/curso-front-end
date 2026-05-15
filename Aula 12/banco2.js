@@ -46,14 +46,19 @@ btnEditarTitular.addEventListener('click', () => {
     novoBotao.id = 'btn-editar-titular';
     novoBotao.textContent = '✏️ Alterar titular';
 
+    // adiciona o evento novamente no botão recriado
+    novoBotao.addEventListener('click', arguments.callee);
+
     // substitui o input pelo botão de novo
     input.replaceWith(novoBotao);
-
+  });
+  novoBotao.textContent = '✏️ Alterar titular';
+  novoBotao.style.display = 'block';
+  novoBotao.style.margin = '10px auto';
+});
     // reativa o clique
     
-novoBotao.textContent = '✏️ Alterar titular';
-novoBotao.style.display = 'block';
-novoBotao.style.margin = '10px auto';
+
 
 
 
